@@ -7,6 +7,8 @@ import org.nanabyte.catan.base.Resource;
 /**
  * Implementation of the Hex class for the desert. No resources are produced by
  * a Desert hex.
+ *
+ * @author nanabyte (gnanabyte@gmail.com)
  */
 public class Desert extends Hex {
 	public Desert(Point2D center) {

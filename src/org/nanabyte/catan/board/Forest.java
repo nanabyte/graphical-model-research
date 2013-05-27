@@ -7,6 +7,8 @@ import org.nanabyte.catan.base.Resource;
 /**
  * Implementation of the Hex class for the desert. No resources are produced by
  * a Forest hex.
+ *
+ * @author nanabyte (gnanabyte@gmail.com)
  */
 public class Forest extends Hex {
 	public Forest(Point2D center) {

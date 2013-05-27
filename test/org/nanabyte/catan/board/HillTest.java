@@ -9,6 +9,8 @@ import org.nanabyte.catan.base.Resource;
 
 /**
  * Unit tests for the Hill class.
+ *
+ * @author nanabyte (gnanabyte@gmail.com)
  */
 public class HillTest {
 	@Test

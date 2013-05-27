@@ -7,6 +7,8 @@ import org.nanabyte.catan.base.Resource;
 /**
  * Implementation of the Hex class for the desert. No resources are produced by
  * a Pasture hex.
+ *
+ * @author nanabyte (gnanabyte@gmail.com)
  */
 public class Pasture extends Hex {
 	public Pasture(Point2D center) {

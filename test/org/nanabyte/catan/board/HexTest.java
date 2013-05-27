@@ -9,6 +9,8 @@ import org.nanabyte.catan.base.Resource;
 
 /**
  * Unit tests for the Hex class.
+ *
+ * @author nanabyte (gnanabyte@gmail.com)
  */
 public class HexTest {
 	@Test
