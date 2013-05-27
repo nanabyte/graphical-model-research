@@ -13,30 +13,30 @@ import org.nanabyte.catan.base.Resource;
  * @author nanabyte (gnanabyte@gmail.com)
  */
 public class Hex {
-	/**
-	 * The location of the center point of the hex.
-	 */
-	protected Point2D center;
+  /**
+   * The location of the center point of the hex.
+   */
+  protected Point2D center;
 
-	/**
-	 * The resource produced by this hex.
-	 */
-	protected Resource resource;
+  /**
+   * The resource produced by this hex.
+   */
+  protected Resource resource;
 
-	public Hex(Point2D center, Resource resource) {
-		this.center = center;
-		this.resource = resource;
-	}
+  public Hex(Point2D center, Resource resource) {
+    this.center = center;
+    this.resource = resource;
+  }
 
-	public Hex(double x, double y, Resource resource) {
-		this(new Point2D.Double(x,y), resource);
-	}
+  public Hex(double x, double y, Resource resource) {
+    this(new Point2D.Double(x,y), resource);
+  }
 
-	public Point2D getCenter() {
-		return this.center;
-	}
+  public Point2D getCenter() {
+    return this.center;
+  }
 
-	public Resource getResource() {
-		return this.resource;
-	}
+  public Resource getResource() {
+    return this.resource;
+  }
 }

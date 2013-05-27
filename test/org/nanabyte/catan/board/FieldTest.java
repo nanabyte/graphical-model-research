@@ -13,19 +13,19 @@ import org.nanabyte.catan.base.Resource;
  * @author nanabyte (gnanabyte@gmail.com)
  */
 public class FieldTest {
-	@Test
+  @Test
   public void testPointInit() {
-		Point2D expectedCenter = new Point2D.Double(0,3);
-		Field desert = new Field(expectedCenter);
-		assertEquals(expectedCenter, desert.getCenter());
-		assertEquals(Resource.GRAIN, desert.getResource());
-	}
+    Point2D expectedCenter = new Point2D.Double(0,3);
+    Field desert = new Field(expectedCenter);
+    assertEquals(expectedCenter, desert.getCenter());
+    assertEquals(Resource.GRAIN, desert.getResource());
+  }
 
-	@Test
-	public void testTwoValueInit() {
-		Point2D expectedCenter = new Point2D.Double(0,3);
-		Field desert = new Field(0, 3);
-		assertEquals(expectedCenter, desert.getCenter());
-		assertEquals(Resource.GRAIN, desert.getResource());
-	}
+  @Test
+  public void testTwoValueInit() {
+    Point2D expectedCenter = new Point2D.Double(0,3);
+    Field desert = new Field(0, 3);
+    assertEquals(expectedCenter, desert.getCenter());
+    assertEquals(Resource.GRAIN, desert.getResource());
+  }
 }

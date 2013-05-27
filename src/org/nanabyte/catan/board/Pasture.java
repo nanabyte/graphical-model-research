@@ -11,11 +11,11 @@ import org.nanabyte.catan.base.Resource;
  * @author nanabyte (gnanabyte@gmail.com)
  */
 public class Pasture extends Hex {
-	public Pasture(Point2D center) {
-		super(center, Resource.SHEEP);
-	}
+  public Pasture(Point2D center) {
+    super(center, Resource.SHEEP);
+  }
 
-	public Pasture(double x, double y) {
-		super(x, y, Resource.SHEEP);
-	}
+  public Pasture(double x, double y) {
+    super(x, y, Resource.SHEEP);
+  }
 }

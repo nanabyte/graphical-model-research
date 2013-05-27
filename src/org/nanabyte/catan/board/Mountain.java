@@ -11,11 +11,11 @@ import org.nanabyte.catan.base.Resource;
  * @author nanabyte (gnanabyte@gmail.com)
  */
 public class Mountain extends Hex {
-	public Mountain(Point2D center) {
-		super(center, Resource.ORE);
-	}
+  public Mountain(Point2D center) {
+    super(center, Resource.ORE);
+  }
 
-	public Mountain(double x, double y) {
-		super(x, y, Resource.ORE);
-	}
+  public Mountain(double x, double y) {
+    super(x, y, Resource.ORE);
+  }
 }

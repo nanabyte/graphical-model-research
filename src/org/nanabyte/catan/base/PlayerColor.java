@@ -6,8 +6,8 @@ package org.nanabyte.catan.base;
  * @author nanabyte (gnanabyte@gmail.com)
  */
 public enum PlayerColor {
-	RED,
+  RED,
   WHITE,
-	BLUE,
+  BLUE,
   ORANGE;
 }

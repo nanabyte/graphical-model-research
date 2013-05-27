@@ -11,11 +11,11 @@ import org.nanabyte.catan.base.Resource;
  * @author nanabyte (gnanabyte@gmail.com)
  */
 public class Hill extends Hex {
-	public Hill(Point2D center) {
-		super(center, Resource.BRICK);
-	}
+  public Hill(Point2D center) {
+    super(center, Resource.BRICK);
+  }
 
-	public Hill(double x, double y) {
-		super(x, y, Resource.BRICK);
-	}
+  public Hill(double x, double y) {
+    super(x, y, Resource.BRICK);
+  }
 }

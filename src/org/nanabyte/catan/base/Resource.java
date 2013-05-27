@@ -9,7 +9,7 @@ public enum Resource {
 	NONE,
   BRICK,
   GRAIN,
-	ORE,
-	SHEEP,
-	WOOD;
+  ORE,
+  SHEEP,
+  WOOD;
 }

@@ -11,11 +11,11 @@ import org.nanabyte.catan.base.Resource;
  * @author nanabyte (gnanabyte@gmail.com)
  */
 public class Forest extends Hex {
-	public Forest(Point2D center) {
-		super(center, Resource.WOOD);
-	}
+  public Forest(Point2D center) {
+    super(center, Resource.WOOD);
+  }
 
-	public Forest(double x, double y) {
-		super(x, y, Resource.WOOD);
-	}
+  public Forest(double x, double y) {
+    super(x, y, Resource.WOOD);
+  }
 }

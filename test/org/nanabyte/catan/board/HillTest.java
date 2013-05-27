@@ -13,19 +13,19 @@ import org.nanabyte.catan.base.Resource;
  * @author nanabyte (gnanabyte@gmail.com)
  */
 public class HillTest {
-	@Test
+  @Test
   public void testPointInit() {
-		Point2D expectedCenter = new Point2D.Double(0,3);
-		Hill desert = new Hill(expectedCenter);
-		assertEquals(expectedCenter, desert.getCenter());
-		assertEquals(Resource.BRICK, desert.getResource());
-	}
+    Point2D expectedCenter = new Point2D.Double(0,3);
+    Hill desert = new Hill(expectedCenter);
+    assertEquals(expectedCenter, desert.getCenter());
+    assertEquals(Resource.BRICK, desert.getResource());
+  }
 
-	@Test
-	public void testTwoValueInit() {
-		Point2D expectedCenter = new Point2D.Double(0,3);
-		Hill desert = new Hill(0, 3);
-		assertEquals(expectedCenter, desert.getCenter());
-		assertEquals(Resource.BRICK, desert.getResource());
-	}
+  @Test
+  public void testTwoValueInit() {
+    Point2D expectedCenter = new Point2D.Double(0,3);
+    Hill desert = new Hill(0, 3);
+    assertEquals(expectedCenter, desert.getCenter());
+    assertEquals(Resource.BRICK, desert.getResource());
+  }
 }

@@ -11,11 +11,11 @@ import org.nanabyte.catan.base.Resource;
  * @author nanabyte (gnanabyte@gmail.com)
  */
 public class Field extends Hex {
-	public Field(Point2D center) {
-		super(center, Resource.GRAIN);
-	}
+  public Field(Point2D center) {
+    super(center, Resource.GRAIN);
+  }
 
-	public Field(double x, double y) {
-		super(x, y, Resource.GRAIN);
-	}
+  public Field(double x, double y) {
+    super(x, y, Resource.GRAIN);
+  }
 }

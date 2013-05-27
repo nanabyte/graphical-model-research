@@ -13,19 +13,19 @@ import org.nanabyte.catan.base.Resource;
  * @author nanabyte (gnanabyte@gmail.com)
  */
 public class HexTest {
-	@Test
+  @Test
   public void testPointInit() {
-		Point2D expectedCenter = new Point2D.Double(0,3);
-		Hex hex = new Hex(expectedCenter, Resource.WOOD);
-		assertEquals(expectedCenter, hex.getCenter());
-		assertEquals(Resource.WOOD, hex.getResource());
-	}
+    Point2D expectedCenter = new Point2D.Double(0,3);
+    Hex hex = new Hex(expectedCenter, Resource.WOOD);
+    assertEquals(expectedCenter, hex.getCenter());
+    assertEquals(Resource.WOOD, hex.getResource());
+  }
 
-	@Test
-	public void testTwoValueInit() {
-		Point2D expectedCenter = new Point2D.Double(0,3);
-		Hex hex = new Hex(0, 3, Resource.WOOD);
-		assertEquals(expectedCenter, hex.getCenter());
-		assertEquals(Resource.WOOD, hex.getResource());
-	}
+  @Test
+  public void testTwoValueInit() {
+    Point2D expectedCenter = new Point2D.Double(0,3);
+    Hex hex = new Hex(0, 3, Resource.WOOD);
+    assertEquals(expectedCenter, hex.getCenter());
+    assertEquals(Resource.WOOD, hex.getResource());
+  }
 }
