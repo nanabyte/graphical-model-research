@@ -1,0 +1,64 @@
+<project name="Catan" default="compile" basedir=".">
+	<description>
+		simple example build file
+	</description>
+
+  <!-- Set global properties for this bin -->
+  <property name="src" location="src"/>
+	<property name="test" location="test"/>
+	<property name="testOutput" location="testOutput"/>
+  <property name="bin" location="bin"/>
+  <property name="dist"  location="dist"/>
+
+	<!-- Set the JUnit4 classpath -->
+	<path id="JUnit4.classpath">
+		<pathelement location="/usr/share/java/junit4-4.8.2.jar"/>
+		<pathelement location="/usr/share/java/hamcrest-core-1.1.jar"/>
+	</path>
+
+	<!-- Set the Catan project classpath -->
+	<path id="Catan.classpath">
+		<pathelement location="bin"/>
+		<path refid="JUnit4.classpath"/>
+	</path>
+
+  <target name="init">
+    <!-- Create the time stamp -->
+    <tstamp/>
+    <!-- Create the build directory structure used by compile -->
+    <mkdir dir="${bin}"/>
+  </target>
+
+  <target name="compile" depends="init" description="compile the source ">
+    <!-- Compile the java code from ${src} into ${bin} -->
+    <javac debug="true" destdir="${bin}">
+			<src path="${src}"/>
+			<classpath refid="Catan.classpath"/>
+		</javac>
+  </target>
+
+  <target name="compile-test" depends="compile" description="compile the tests">
+    <!-- Compile the java code from ${src} into ${bin} -->
+    <javac debug="true" destdir="${bin}">
+			<src path="${test}"/>
+			<classpath refid="Catan.classpath"/>
+		</javac>
+  </target>
+
+	<target name="test" depends="compile-test" description="tests">
+		<junit fork="yes">
+			<classpath refid="Catan.classpath"/>
+			<batchtest>
+				<fileset dir="${test}">
+					<include name="**/*Test*"/>
+				</fileset>
+			</batchtest>
+			<formatter type="brief" usefile="false"/>
+		</junit>
+	</target>
+
+  <target name="clean" description="clean up" >
+    <!-- Delete the ${bin} and ${dist} directory trees -->
+    <delete dir="${bin}"/>
+  </target>
+</project>
