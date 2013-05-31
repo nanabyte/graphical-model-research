@@ -23,13 +23,17 @@ public class Hex {
    */
   protected Resource resource;
 
-  public Hex(Point2D center, Resource resource) {
-    this.center = center;
-    this.resource = resource;
+  public Hex(Resource resource) {
+    this(0, 0, resource);
   }
 
   public Hex(double x, double y, Resource resource) {
     this(new Point2D.Double(x,y), resource);
+  }
+
+  public Hex(Point2D center, Resource resource) {
+    this.center = center;
+    this.resource = resource;
   }
 
   public Point2D getCenter() {
@@ -38,5 +42,9 @@ public class Hex {
 
   public Resource getResource() {
     return this.resource;
+  }
+
+  public void setCenter(Point2D center) {
+    this.center = center;
   }
 }

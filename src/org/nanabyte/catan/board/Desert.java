@@ -11,6 +11,10 @@ import org.nanabyte.catan.base.Resource;
  * @author nanabyte (gnanabyte@gmail.com)
  */
 public class Desert extends Hex {
+  public Desert() {
+    super(Resource.NONE);
+  }
+
   public Desert(Point2D center) {
     super(center, Resource.NONE);
   }

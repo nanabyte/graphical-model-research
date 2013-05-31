@@ -5,12 +5,16 @@ import java.awt.geom.Point2D;
 import org.nanabyte.catan.base.Resource;
 
 /**
- * Implementation of the Hex class for the desert. No resources are produced by
- * a Mountain hex.
+ * Implementation of the Hex class for the desert. Ore is produced by a Mountain
+ * hex.
  *
  * @author nanabyte (gnanabyte@gmail.com)
  */
 public class Mountain extends Hex {
+  public Mountain() {
+    super(Resource.ORE);
+  }
+
   public Mountain(Point2D center) {
     super(center, Resource.ORE);
   }

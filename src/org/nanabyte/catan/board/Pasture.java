@@ -5,12 +5,16 @@ import java.awt.geom.Point2D;
 import org.nanabyte.catan.base.Resource;
 
 /**
- * Implementation of the Hex class for the desert. No resources are produced by
+ * Implementation of the Hex class for the desert. Sheep are produced by
  * a Pasture hex.
  *
  * @author nanabyte (gnanabyte@gmail.com)
  */
 public class Pasture extends Hex {
+  public Pasture() {
+    super(Resource.SHEEP);
+  }
+
   public Pasture(Point2D center) {
     super(center, Resource.SHEEP);
   }
