@@ -5,8 +5,8 @@ import java.awt.geom.Point2D;
 import org.nanabyte.catan.base.Resource;
 
 /**
- * Implementation of the Hex class for the desert. No resources are produced by
- * a Desert hex.
+ * Implementation of the {@link Hex} class for the desert. No resources are
+ * produced by a desert hex.
  *
  * @author nanabyte (gnanabyte@gmail.com)
  */

@@ -9,7 +9,7 @@ import org.junit.Test;
 import org.nanabyte.catan.base.Resource;
 
 /**
- * Unit tests for the HexLayout class.
+ * Unit tests for the {@link HexLayout} class.
  *
  * @author nanabyte (gnanabyte@gmail.com)
  */

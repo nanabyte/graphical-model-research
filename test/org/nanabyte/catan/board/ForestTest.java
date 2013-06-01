@@ -8,7 +8,7 @@ import org.junit.Test;
 import org.nanabyte.catan.base.Resource;
 
 /**
- * Unit tests for the Forest class.
+ * Unit tests for the {@link Forest} class.
  *
  * @author nanabyte (gnanabyte@gmail.com)
  */

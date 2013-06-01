@@ -14,7 +14,7 @@ import java.util.Scanner;
 import org.nanabyte.catan.base.Constants;
 
 /**
- * Class that represents the Catan layout of hex tiles.
+ * Class that represents the Catan layout of {@link Hex} tiles.
  *
  * <p>In Catan, the hex part of the board is comprised rows of 3-4-5-4-3 tiles.
  *

@@ -8,7 +8,7 @@ import org.junit.Test;
 import org.nanabyte.catan.base.Resource;
 
 /**
- * Unit tests for the Desert class.
+ * Unit tests for the {@link Desert} class.
  *
  * @author nanabyte (gnanabyte@gmail.com)
  */

@@ -5,8 +5,8 @@ import java.awt.geom.Point2D;
 import org.nanabyte.catan.base.Resource;
 
 /**
- * Implementation of the Hex class for the desert. Grain is produced by a Field
- * hex.
+ * Implementation of the {@link Hex} class for the desert. Grain is produced by
+ * a Field hex.
  *
  * @author nanabyte (gnanabyte@gmail.com)
  */

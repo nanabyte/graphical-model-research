@@ -8,7 +8,7 @@ import org.junit.Test;
 import org.nanabyte.catan.base.Resource;
 
 /**
- * Unit tests for the Mountain class.
+ * Unit tests for the {@link Mountain} class.
  *
  * @author nanabyte (gnanabyte@gmail.com)
  */

@@ -5,8 +5,8 @@ import java.awt.geom.Point2D;
 import org.nanabyte.catan.base.Resource;
 
 /**
- * Implementation of the Hex class for the desert. Brick is produced by a Hill
- * hex.
+ * Implementation of the {@link Hex} class for the desert. Brick is produced by
+ * a hill hex.
  *
  * @author nanabyte (gnanabyte@gmail.com)
  */
